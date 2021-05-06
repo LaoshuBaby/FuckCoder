@@ -1,34 +1,6 @@
-//本头文件旨在于修正各种难以定位而又知名而致命的拼写错误
-//This header file is intended to fix a variety of difficult to locate, well-known and fatal spelling-errors
 
-//本头文件仅能进行对全文进行预处理，若您在例如输出文本中刻意书写了一些需要展现出来的“拼写错误”，很遗憾它们将一并被修正，在执行版中将不会如此。
-//This header file can only preprocess the full text. 
-//If you intentionally write some "spelling errors" in the output text, they will be unfortunately corrected together.
-//This feature will not ocurred in execution version.
 
-//有一部分美好的设想似乎因为双字节问题或者编译器问题而不能实践，但我们将在执行版中完整的引入这些支持
-//There are some good ideas that seem to be impractical due to double-byte issues or compiler issues
-//but we will fully introduce these support in the executive version
 
-//中文标点
-#define ： :
-#define ； ;
-//C3873: “0x2018”: 不允许将此字符作为标识符的第一个字符 C2001: 常量中有换行符 #define ‘ '
-//C3873: “0x2019”: 不允许将此字符作为标识符的第一个字符 C2001: 常量中有换行符 #define ’ '
-//C3873: “0x201C”: 不允许将此字符作为标识符的第一个字符 C2001: 常量中有换行符 #define “ "
-//C3873: “0x201D”: 不允许将此字符作为标识符的第一个字符 C2001: 常量中有换行符 #define ” "
-#define ， ,
-//C3873: “0x3002”: 不允许将此字符作为标识符的第一个字符 #define 。 .
-#define ！ !
-#define ？ ?
-//C3873: “0x3001”: 不允许将此字符作为标识符的第一个字符 #define 、 ,
-#define （ (
-#define ） )
-#define ￥ $
-//C3873 : “0x3010”: 不允许将此字符作为标识符的第一个字符 #define 【 [
-//C3873 : “0x3011”: 不允许将此字符作为标识符的第一个字符 #define 】 ]
-//C3873 : “0x301A”: 不允许将此字符作为标识符的第一个字符 #define 《 <
-//C3873 : “0x301B”: 不允许将此字符作为标识符的第一个字符 #define 》 >
 
 //全角字符
 #define Ａ A
