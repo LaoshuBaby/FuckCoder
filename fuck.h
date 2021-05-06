@@ -1,108 +1,108 @@
-//±¾Í·ÎÄ¼şÖ¼ÔÚÓÚĞŞÕı¸÷ÖÖÄÑÒÔ¶¨Î»¶øÓÖÖªÃû¶øÖÂÃüµÄÆ´Ğ´´íÎó
+//æœ¬å¤´æ–‡ä»¶æ—¨åœ¨äºä¿®æ­£å„ç§éš¾ä»¥å®šä½è€ŒåˆçŸ¥åè€Œè‡´å‘½çš„æ‹¼å†™é”™è¯¯
 //This header file is intended to fix a variety of difficult to locate, well-known and fatal spelling-errors
 
-//±¾Í·ÎÄ¼ş½öÄÜ½øĞĞ¶ÔÈ«ÎÄ½øĞĞÔ¤´¦Àí£¬ÈôÄúÔÚÀıÈçÊä³öÎÄ±¾ÖĞ¿ÌÒâÊéĞ´ÁËÒ»Ğ©ĞèÒªÕ¹ÏÖ³öÀ´µÄ¡°Æ´Ğ´´íÎó¡±£¬ºÜÒÅº¶ËüÃÇ½«Ò»²¢±»ĞŞÕı£¬ÔÚÖ´ĞĞ°æÖĞ½«²»»áÈç´Ë¡£
+//æœ¬å¤´æ–‡ä»¶ä»…èƒ½è¿›è¡Œå¯¹å…¨æ–‡è¿›è¡Œé¢„å¤„ç†ï¼Œè‹¥æ‚¨åœ¨ä¾‹å¦‚è¾“å‡ºæ–‡æœ¬ä¸­åˆ»æ„ä¹¦å†™äº†ä¸€äº›éœ€è¦å±•ç°å‡ºæ¥çš„â€œæ‹¼å†™é”™è¯¯â€ï¼Œå¾ˆé—æ†¾å®ƒä»¬å°†ä¸€å¹¶è¢«ä¿®æ­£ï¼Œåœ¨æ‰§è¡Œç‰ˆä¸­å°†ä¸ä¼šå¦‚æ­¤ã€‚
 //This header file can only preprocess the full text. 
 //If you intentionally write some "spelling errors" in the output text, they will be unfortunately corrected together.
 //This feature will not ocurred in execution version.
 
-//ÓĞÒ»²¿·ÖÃÀºÃµÄÉèÏëËÆºõÒòÎªË«×Ö½ÚÎÊÌâ»òÕß±àÒëÆ÷ÎÊÌâ¶ø²»ÄÜÊµ¼ù£¬µ«ÎÒÃÇ½«ÔÚÖ´ĞĞ°æÖĞÍêÕûµÄÒıÈëÕâĞ©Ö§³Ö
+//æœ‰ä¸€éƒ¨åˆ†ç¾å¥½çš„è®¾æƒ³ä¼¼ä¹å› ä¸ºåŒå­—èŠ‚é—®é¢˜æˆ–è€…ç¼–è¯‘å™¨é—®é¢˜è€Œä¸èƒ½å®è·µï¼Œä½†æˆ‘ä»¬å°†åœ¨æ‰§è¡Œç‰ˆä¸­å®Œæ•´çš„å¼•å…¥è¿™äº›æ”¯æŒ
 //There are some good ideas that seem to be impractical due to double-byte issues or compiler issues
 //but we will fully introduce these support in the executive version
 
-//ÖĞÎÄ±êµã
-#define £º :
-#define £» ;
-//C3873: ¡°0x2018¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û C2001: ³£Á¿ÖĞÓĞ»»ĞĞ·û #define ¡® '
-//C3873: ¡°0x2019¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û C2001: ³£Á¿ÖĞÓĞ»»ĞĞ·û #define ¡¯ '
-//C3873: ¡°0x201C¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û C2001: ³£Á¿ÖĞÓĞ»»ĞĞ·û #define ¡° "
-//C3873: ¡°0x201D¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û C2001: ³£Á¿ÖĞÓĞ»»ĞĞ·û #define ¡± "
-#define £¬ ,
-//C3873: ¡°0x3002¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û #define ¡£ .
-#define £¡ !
-#define £¿ ?
-//C3873: ¡°0x3001¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û #define ¡¢ ,
-#define £¨ (
-#define £© )
-#define £¤ $
-//C3873 : ¡°0x3010¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û #define ¡¾ [
-//C3873 : ¡°0x3011¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û #define ¡¿ ]
-//C3873 : ¡°0x301A¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û #define ¡¶ <
-//C3873 : ¡°0x301B¡±: ²»ÔÊĞí½«´Ë×Ö·û×÷Îª±êÊ¶·ûµÄµÚÒ»¸ö×Ö·û #define ¡· >
+//ä¸­æ–‡æ ‡ç‚¹
+#define ï¼š :
+#define ï¼› ;
+//C3873: â€œ0x2018â€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ C2001: å¸¸é‡ä¸­æœ‰æ¢è¡Œç¬¦ #define â€˜ '
+//C3873: â€œ0x2019â€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ C2001: å¸¸é‡ä¸­æœ‰æ¢è¡Œç¬¦ #define â€™ '
+//C3873: â€œ0x201Câ€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ C2001: å¸¸é‡ä¸­æœ‰æ¢è¡Œç¬¦ #define â€œ "
+//C3873: â€œ0x201Dâ€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ C2001: å¸¸é‡ä¸­æœ‰æ¢è¡Œç¬¦ #define â€ "
+#define ï¼Œ ,
+//C3873: â€œ0x3002â€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ #define ã€‚ .
+#define ï¼ !
+#define ï¼Ÿ ?
+//C3873: â€œ0x3001â€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ #define ã€ ,
+#define ï¼ˆ (
+#define ï¼‰ )
+#define ï¿¥ $
+//C3873 : â€œ0x3010â€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ #define ã€ [
+//C3873 : â€œ0x3011â€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ #define ã€‘ ]
+//C3873 : â€œ0x301Aâ€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ #define ã€Š <
+//C3873 : â€œ0x301Bâ€: ä¸å…è®¸å°†æ­¤å­—ç¬¦ä½œä¸ºæ ‡è¯†ç¬¦çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ #define ã€‹ >
 
-//È«½Ç×Ö·û
-#define £Á A
-#define £Â B
-#define £Ã C
-#define £Ä D
-#define £Å E
-#define £Æ F
-#define £Ç G
-#define £È H
-#define £É I
-#define £Ê J
-#define £Ë K
-#define £Ì L
-#define £Í M
-#define £Î N
-#define £Ï O
-#define £Ğ P
-#define £Ñ Q
-#define £Ò R
-#define £Ó S
-#define £Ô T
-#define £Õ U
-#define £Ö V
-#define £× W
-#define £Ø X
-#define £Ù Y
-#define £Ú Z
+//å…¨è§’å­—ç¬¦
+#define ï¼¡ A
+#define ï¼¢ B
+#define ï¼£ C
+#define ï¼¤ D
+#define ï¼¥ E
+#define ï¼¦ F
+#define ï¼§ G
+#define ï¼¨ H
+#define ï¼© I
+#define ï¼ª J
+#define ï¼« K
+#define ï¼¬ L
+#define ï¼­ M
+#define ï¼® N
+#define ï¼¯ O
+#define ï¼° P
+#define ï¼± Q
+#define ï¼² R
+#define ï¼³ S
+#define ï¼´ T
+#define ï¼µ U
+#define ï¼¶ V
+#define ï¼· W
+#define ï¼¸ X
+#define ï¼¹ Y
+#define ï¼º Z
 
-#define £á a
-#define £â b
-#define £ã c
-#define £ä e
-#define £å e
-#define £æ f
-#define £ç g
-#define £è h
-#define £é i
-#define £ê j
-#define £ë k
-#define £ì l
-#define £í m
-#define £î n
-#define £ï o
-#define £ğ p
-#define £ñ q
-#define £ò r
-#define £ó s
-#define £ô t
-#define £õ u
-#define £ö v
-#define £÷ w
-#define £ø x
-#define £ù y
-#define £ú z
+#define ï½ a
+#define ï½‚ b
+#define ï½ƒ c
+#define ï½„ e
+#define ï½… e
+#define ï½† f
+#define ï½‡ g
+#define ï½ˆ h
+#define ï½‰ i
+#define ï½Š j
+#define ï½‹ k
+#define ï½Œ l
+#define ï½ m
+#define ï½ n
+#define ï½ o
+#define ï½ p
+#define ï½‘ q
+#define ï½’ r
+#define ï½“ s
+#define ï½” t
+#define ï½• u
+#define ï½– v
+#define ï½— w
+#define ï½˜ x
+#define ï½™ y
+#define ï½š z
 
-#define £° 0
-#define £± 1
-#define £² 2
-#define £³ 3
-#define £´ 4
-#define £µ 5
-#define £¶ 6
-#define £· 7
-#define £¸ 8
-#define £¹ 9
-//×î³ôÃûÕÑÖøµÄÈ«½Ç¿Õ¸ñÎÒÕæµÄ²»ÖªµÀÔõÃ´´¦Àí
+#define ï¼ 0
+#define ï¼‘ 1
+#define ï¼’ 2
+#define ï¼“ 3
+#define ï¼” 4
+#define ï¼• 5
+#define ï¼– 6
+#define ï¼— 7
+#define ï¼˜ 8
+#define ï¼™ 9
+//æœ€è‡­åæ˜­è‘—çš„å…¨è§’ç©ºæ ¼æˆ‘çœŸçš„ä¸çŸ¥é“æ€ä¹ˆå¤„ç†
 
-//È«½Ç±êµã
-#define £¨ (
-#define £© )
-//Ê§°ÜÁË£¬ÕâÁ½¸ö²¢²»ÄÜÕıÈ·Ìæ»»ËùĞèÒªµÄ×Ö·û
+//å…¨è§’æ ‡ç‚¹
+#define ï¼ˆ (
+#define ï¼‰ )
+//å¤±è´¥äº†ï¼Œè¿™ä¸¤ä¸ªå¹¶ä¸èƒ½æ­£ç¡®æ›¿æ¢æ‰€éœ€è¦çš„å­—ç¬¦
 
-//´íÎóµÄÓ¢ÎÄÆ´Ğ´
+//é”™è¯¯çš„è‹±æ–‡æ‹¼å†™
 
 #define mian main
 #define ture true
@@ -112,12 +112,11 @@
 #define studo stdio
 #define elif else if
 
-//¿ÉÑ¡µÄ
+//å¯é€‰çš„
 #define dfiene define
 #define studio.h stdio.h
 #define man() main()
-//#define ¾® #
+//#define äº• #
 #define paintf printf
 #define difine define
-//±È½Ï¾ªÑÈµÄÊÇdefine<blank>Src<blank>DstÕâ¶ÎÀïÃæµÄDst¾ÓÈ»¿ÉÒÔÊÇÒ»¸ö°üº¬¿Õ¸ñµÄ×Ö·û´®
-//Fuck ALL Python Programer£¡
+//æ¯”è¾ƒæƒŠè®¶çš„æ˜¯define<blank>Src<blank>Dstè¿™æ®µé‡Œé¢çš„Dstå±…ç„¶å¯ä»¥æ˜¯ä¸€ä¸ªåŒ…å«ç©ºæ ¼çš„å­—ç¬¦ä¸²
