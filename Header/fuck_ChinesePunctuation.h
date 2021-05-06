@@ -1,4 +1,6 @@
 //中文标点
+//ChinesePunctuation
+
 #define ： :
 #define ； ;
 //C3873: “0x2018”: 不允许将此字符作为标识符的第一个字符 C2001: 常量中有换行符 #define ‘ '

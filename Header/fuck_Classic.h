@@ -1,5 +1,5 @@
-
-//错误的英文拼写
+//经典错误
+//Classic
 
 #define mian main
 #define ture true
@@ -7,4 +7,3 @@
 #define viod void
 #define stido stdio
 #define studo stdio
-#define elif else if
