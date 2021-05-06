@@ -111,5 +111,13 @@
 #define stido stdio
 #define studo stdio
 #define elif else if
+
+//可选的
+#define dfiene define
+#define studio.h stdio.h
+#define man() main()
+//#define 井 #
+#define paintf printf
+#define difine define
 //比较惊讶的是define<blank>Src<blank>Dst这段里面的Dst居然可以是一个包含空格的字符串
 //Fuck ALL Python Programer！
