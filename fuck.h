@@ -102,15 +102,6 @@
 #define ） )
 //失败了，这两个并不能正确替换所需要的字符
 
-//错误的英文拼写
-
-#define mian main
-#define ture true
-#define whlie while
-#define viod void
-#define stido stdio
-#define studo stdio
-#define elif else if
 
 //可选的
 #define dfiene define
